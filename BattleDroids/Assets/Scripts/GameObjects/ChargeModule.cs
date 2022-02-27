@@ -25,4 +25,24 @@ public class ChargeModule : Module
 
         return m_charge;
     }
+
+    public float GetCapacity()
+    {
+        return m_capacity;
+    }
+
+    public float GetCharge()
+    {
+        return m_charge;
+    }
+
+    public void SetCapacity(float _capacity)
+    {
+        m_capacity = _capacity;
+    }
+
+    public void SetCharge(float _charge)
+    {
+        m_charge = _charge;
+    }
 }

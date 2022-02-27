@@ -1,0 +1,911 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.27f1 (e759542391ea) revision 15161684'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'en' Physical Memory: 32702 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\Uni Software\Unity Editors\2020.3.27f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Git/BattleDroidsRepo/BattleDroids
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+52527
+Successfully changed project path to: D:/Git/BattleDroidsRepo/BattleDroids
+D:/Git/BattleDroidsRepo/BattleDroids
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 47.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.27f1 (e759542391ea)
+[Subsystems] Discovering subsystems at path D:/Uni Software/Unity Editors/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Git/BattleDroidsRepo/BattleDroids/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'D:/Uni Software/Unity Editors/2020.3.27f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Uni Software/Unity Editors/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Uni Software/Unity Editors/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56304
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Uni Software/Unity Editors/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Uni Software/Unity Editors/2020.3.27f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001198 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 37.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.476 seconds
+Domain Reload Profiling:
+	ReloadAssembly (476ms)
+		BeginReloadAssembly (48ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (371ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (119ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (146ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (37ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (66ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003266 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.882 seconds
+Domain Reload Profiling:
+	ReloadAssembly (882ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (710ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (231ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (297ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.9 MB.
+System memory in use after: 85.0 MB.
+
+Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 2541.
+Total: 5.875900 ms (FindLiveObjects: 0.200400 ms CreateObjectMapping: 0.044700 ms MarkObjects: 5.550300 ms  DeleteObjects: 0.078300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe90302581d9688e55be199c7e6ecde') in 0.064187 seconds 
+  Import took 0.067080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.395180 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d48c3e15458bcd857f80bbe586b90ce') in 0.005536 seconds 
+  Import took 0.008574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.642826 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ae720a9c19fb249032498c280d168a7') in 0.005498 seconds 
+  Import took 0.009034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.496551 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba82c3e47863dc30be8c36b3b3fdea0e') in 0.003925 seconds 
+  Import took 0.006917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.615647 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0727ea203e5e2c0c723195b5ab0d6690') in 0.004084 seconds 
+  Import took 0.007269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.413675 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6439042c279bc8e3a5f2e99198f2857') in 0.004248 seconds 
+  Import took 0.007746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.826064 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a6e186aaf3f5638194d8e4b1eb0432') in 0.005513 seconds 
+  Import took 0.009239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.660986 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a5565fb5e395458f7b31ca7248f0064') in 0.004341 seconds 
+  Import took 0.007632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.584807 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85c03a4247f6dc001b5bb7e9e473f65') in 0.003729 seconds 
+  Import took 0.006740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.589534 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae9e0266bbc2a715f05f31e06ef5786') in 0.004006 seconds 
+  Import took 0.006957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.008650 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f18bd3e39e7af263303dcb83810fae') in 0.004504 seconds 
+  Import took 0.008407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.761580 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e402bd0f10ec393ff6eeb78fb1a1ada') in 0.007992 seconds 
+  Import took 0.010952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.959721 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abdb750b4826ebaa07fc6d86f0aca582') in 0.004131 seconds 
+  Import took 0.007130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.829437 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1bc46a72c35b64f8990c7f255ee1736') in 0.003999 seconds 
+  Import took 0.007151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.434861 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5fc4be64f826434487fbd1357818f43') in 0.004047 seconds 
+  Import took 0.007209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.957144 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beed7f4a142fe0ebe214f4822fbce9b5') in 0.003992 seconds 
+  Import took 0.007051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.204594 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca0962886da810714fc82e9a47762c0') in 0.004645 seconds 
+  Import took 0.007994 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003349 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.957 seconds
+Domain Reload Profiling:
+	ReloadAssembly (958ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (799ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (323ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.9 MB.
+System memory in use after: 85.0 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2545.
+Total: 6.262900 ms (FindLiveObjects: 0.202500 ms CreateObjectMapping: 0.044200 ms MarkObjects: 5.985400 ms  DeleteObjects: 0.029400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 56.180416 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fcb35aa1ab841e2d2497972e4f627ad') in 0.037715 seconds 
+  Import took 0.040985 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004262 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.854 seconds
+Domain Reload Profiling:
+	ReloadAssembly (854ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (709ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (283ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.9 MB.
+System memory in use after: 85.0 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2547.
+Total: 5.418800 ms (FindLiveObjects: 0.177600 ms CreateObjectMapping: 0.044300 ms MarkObjects: 5.163500 ms  DeleteObjects: 0.032200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13.841175 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01846fb71c262e5d376bb2ef6a9055ab') in 0.036118 seconds 
+  Import took 0.039106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.542361 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa28de501588665cc4c087e0534e61e3') in 0.004397 seconds 
+  Import took 0.024166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.396513 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ada20b11b131c537d2670f00bc66769') in 0.004360 seconds 
+  Import took 0.007628 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003184 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.841 seconds
+Domain Reload Profiling:
+	ReloadAssembly (842ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (701ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (230ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (287ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (178ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.9 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2549.
+Total: 5.610400 ms (FindLiveObjects: 0.181300 ms CreateObjectMapping: 0.045300 ms MarkObjects: 5.352700 ms  DeleteObjects: 0.029900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003617 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.906 seconds
+Domain Reload Profiling:
+	ReloadAssembly (906ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (755ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (312ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2551.
+Total: 6.272000 ms (FindLiveObjects: 0.266400 ms CreateObjectMapping: 0.114000 ms MarkObjects: 5.857800 ms  DeleteObjects: 0.032300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 191.390030 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecf9973b68f8af14ceff7837fa01ee42') in 0.035212 seconds 
+  Import took 0.038926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.542442 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e90cfa76930054d3b212b71ef646796') in 0.004193 seconds 
+  Import took 0.007450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.510958 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e4888f0f73fa3587a8f75f5c9b5675') in 0.004603 seconds 
+  Import took 0.008035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.217456 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677ff0f0a5d11434a3bfe43dc3753c1e') in 0.004996 seconds 
+  Import took 0.009677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.032267 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c466d2ed14415547225298cb1af6b2b0') in 0.003905 seconds 
+  Import took 0.006848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.649754 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bc225630e5b287e5d63969f8e9a2bd') in 0.004345 seconds 
+  Import took 0.007307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.686608 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fde550d218a423eed60a3d44b16e908') in 0.004012 seconds 
+  Import took 0.006951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.210749 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9554f726438e69e09e3a0af507d4e8d') in 0.004072 seconds 
+  Import took 0.006997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.412937 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c459d88d558430874ac509621ce698') in 0.004650 seconds 
+  Import took 0.008582 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003318 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Domain Reload Profiling:
+	ReloadAssembly (905ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (756ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (311ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2553.
+Total: 5.986300 ms (FindLiveObjects: 0.186900 ms CreateObjectMapping: 0.044100 ms MarkObjects: 5.726400 ms  DeleteObjects: 0.027600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 115.182174 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2f99a9b4f7ad3e8e456bc534327bc9') in 0.035627 seconds 
+  Import took 0.039171 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003069 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.842 seconds
+Domain Reload Profiling:
+	ReloadAssembly (843ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (701ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (228ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (288ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2555.
+Total: 5.567900 ms (FindLiveObjects: 0.193100 ms CreateObjectMapping: 0.044900 ms MarkObjects: 5.297800 ms  DeleteObjects: 0.031200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 79.616135 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95476e6a309ee145796bc7e82e0b922') in 0.032701 seconds 
+  Import took 0.035514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.432467 seconds.
+  path: Assets/Prefabs/BattleUI/Droid UI.prefab
+  artifactKey: Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BattleUI/Droid UI.prefab using Guid(dffdbaa1c19c5434086ba88aa3f224c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52b1ab6d0ac1557faec9eb8a658cedf') in 0.004182 seconds 
+  Import took 0.007385 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004546 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Domain Reload Profiling:
+	ReloadAssembly (851ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (713ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (288ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2557.
+Total: 6.082600 ms (FindLiveObjects: 0.177200 ms CreateObjectMapping: 0.045000 ms MarkObjects: 5.830100 ms  DeleteObjects: 0.028300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003321 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Domain Reload Profiling:
+	ReloadAssembly (922ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (773ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (327ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.2 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2559.
+Total: 5.998700 ms (FindLiveObjects: 0.218900 ms CreateObjectMapping: 0.046100 ms MarkObjects: 5.702400 ms  DeleteObjects: 0.029900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003062 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Domain Reload Profiling:
+	ReloadAssembly (884ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (743ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (230ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (322ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.1 MB.
+System memory in use after: 85.2 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 2561.
+Total: 6.424500 ms (FindLiveObjects: 0.492500 ms CreateObjectMapping: 0.102100 ms MarkObjects: 5.797600 ms  DeleteObjects: 0.029500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

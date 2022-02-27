@@ -5,9 +5,9 @@ using UnityEngine;
 public class Module : Destructible
 {
     [SerializeField]
-    protected string m_name ="Module";
+    protected string m_name = "Module";
 
-    protected Drone m_host;
+    protected Droid m_host;
 
     public string GetName()
     {
@@ -19,8 +19,8 @@ public class Module : Destructible
         m_name = _name;
     }
 
-    public void SetHost(Drone _drone)
+    public void SetHost(Droid _droid)
     {
-        m_host = _drone;
+        m_host = _droid;
     }
 }

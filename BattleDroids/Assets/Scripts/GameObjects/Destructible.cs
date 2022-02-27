@@ -31,6 +31,18 @@ public class Destructible : MonoBehaviour
         return m_integrity;
     }
 
+    public int RepairFull()
+    {
+        m_integrity = m_durability;
+
+        return m_integrity;
+    }
+
+    public float GetIntegrityPercent()
+    {
+        return (float)m_integrity / (float)m_durability;
+    }
+
     public int GetDurability()
     {
         return m_durability;
