@@ -22,7 +22,7 @@ public class BattleUI : MonoBehaviour
         _newDroidUI.transform.localScale = new Vector3(1, 1, 1);
 
         Vector3 _newPosition = _newDroidUI.transform.position;
-        _newPosition.x = -110 * m_droidUIs.Count + 1050;
+        _newPosition.x = -110 * m_droidUIs.Count + 1000;
         _newDroidUI.transform.position = _newPosition;
 
         DroidUI _newDroidUIScript = _newDroidUI.GetComponent<DroidUI>();
