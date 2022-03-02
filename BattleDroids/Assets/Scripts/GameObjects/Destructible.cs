@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destructible : MonoBehaviour
+public class Destructible : ScriptableObject
 {
     [SerializeField]
     protected int m_durability = 100, m_integrity = 100;

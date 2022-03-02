@@ -7,7 +7,7 @@ public class ChargeModule : Module
     [SerializeField]
     protected float m_capacity = 100.0f, m_charge = 0.0f;
 
-    void Update()
+    public void Update()
     {
         float _powerGeneration = m_host.GetPowerOuput();
 
@@ -24,6 +24,11 @@ public class ChargeModule : Module
         }
 
         return m_charge;
+    }
+
+    public float GetChargePercent()
+    {
+        return (float)m_charge / (float)m_capacity;
     }
 
     public float GetCapacity()

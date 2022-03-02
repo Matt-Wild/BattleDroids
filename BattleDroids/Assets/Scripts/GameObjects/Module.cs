@@ -14,6 +14,11 @@ public class Module : Destructible
         return m_name;
     }
 
+    public Droid GetHost()
+    {
+        return m_host;
+    }
+
     public void SetName(string _name)
     {
         m_name = _name;

@@ -18,7 +18,6 @@ public class InputController : MonoBehaviour
                 if (hit.transform.tag == "Droid")
                 {
                     m_targetDroid = hit.transform.gameObject.GetComponent<Droid>();
-                    m_targetDroid.Damage(1);
                 }    
             }
         }

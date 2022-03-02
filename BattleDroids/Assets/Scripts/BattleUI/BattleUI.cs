@@ -21,9 +21,9 @@ public class BattleUI : MonoBehaviour
         _newDroidUI.transform.SetParent(m_battleCanvas.transform, false);
         _newDroidUI.transform.localScale = new Vector3(1, 1, 1);
 
-        Vector3 _newPosition = _newDroidUI.transform.position;
-        _newPosition.x = -110 * m_droidUIs.Count + 1000;
-        _newDroidUI.transform.position = _newPosition;
+        Vector3 _newPosition = _newDroidUI.transform.localPosition;
+        _newPosition.x = -110 * m_droidUIs.Count + (Screen.width / 2) - 60;
+        _newDroidUI.transform.localPosition = _newPosition;
 
         DroidUI _newDroidUIScript = _newDroidUI.GetComponent<DroidUI>();
         _newDroidUIScript.SetDroid(_droid);
