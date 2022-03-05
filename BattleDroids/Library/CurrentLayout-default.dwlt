@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 129
+  controlID: 112
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 376
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 57
+  controlID: 113
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 58
+  controlID: 114
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -435,22 +435,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials/Droids
+    - Assets/Scripts/Master
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials/Droids
+  - Assets/Scripts/Master
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Git\BattleDroidsRepo\BattleDroids
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 30}
-    m_SelectedIDs: 6a4a0000
-    m_LastClickedID: 19050
-    m_ExpandedIDs: 0000000056450000584500005a4500006845000000ca9a3b
+    m_SelectedIDs: 72450000
+    m_LastClickedID: 17778
+    m_ExpandedIDs: 00000000584500005a4500005c45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -478,7 +478,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000056450000584500005a450000
+    m_ExpandedIDs: 00000000584500005a4500005c450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -601,9 +601,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ec430000
-      m_LastClickedID: 17388
-      m_ExpandedIDs: 7ed3ffff3cfbffff14440000
+      m_SelectedIDs: 0c440000
+      m_LastClickedID: 17420
+      m_ExpandedIDs: 3cfbffff14440000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -664,9 +664,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -18.347572, y: -51.3358, z: 125.17938}
+    m_Target: {x: 3.8545163, y: -79.739174, z: 114.134895}
     speed: 2
-    m_Value: {x: -18.347572, y: -51.3358, z: 125.17938}
+    m_Value: {x: 3.8545163, y: -79.739174, z: 114.134895}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -713,9 +713,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.1906684, y: 0.06678383, z: -0.013011015, w: -0.9792076}
+    m_Target: {x: -0.288584, y: -0.015225959, z: 0.0045810947, w: -0.9572343}
     speed: 2
-    m_Value: {x: -0.1906845, y: 0.06678947, z: -0.013012113, w: -0.97929025}
+    m_Value: {x: -0.28860837, y: -0.015227245, z: 0.0045814817, w: -0.9573152}
   m_Size:
     m_Target: 79.068596
     speed: 2
