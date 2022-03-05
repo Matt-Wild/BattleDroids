@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InputController : MonoBehaviour
 {
+    [SerializeField]
+    Material m_droidDefault, m_droidGlow;
+
     Droid m_targetDroid;
 
     void Update()
@@ -17,9 +20,29 @@ public class InputController : MonoBehaviour
             {
                 if (hit.transform.tag == "Droid")
                 {
-                    m_targetDroid = hit.transform.gameObject.GetComponent<Droid>();
+                    UpdateTargetDroid(hit.transform.gameObject);
                 }    
             }
         }
+    }
+
+    void UpdateTargetDroid(GameObject _newTarget)
+    {
+        if (m_targetDroid)
+        {
+            if (m_targetDroid == _newTarget.GetComponent<Droid>())
+            {
+                m_targetDroid.GetComponent<MeshRenderer>().material = m_droidDefault;
+
+                m_targetDroid = null;
+                return;
+            }
+
+            m_targetDroid.GetComponent<MeshRenderer>().material = m_droidDefault;
+        }
+
+        m_targetDroid = _newTarget.GetComponent<Droid>();
+
+        m_targetDroid.GetComponent<MeshRenderer>().material = m_droidGlow;
     }
 }

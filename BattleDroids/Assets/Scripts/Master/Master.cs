@@ -7,14 +7,14 @@ public class Master : MonoBehaviour
     BattleUI m_battleUI;
 
     [SerializeField]
-    GameObject m_droid;
+    GameObject m_friendlyDroid, m_enemyDroid;
 
     void Start()
     {
         m_battleUI = GameObject.Find("BattleUI").GetComponent<BattleUI>();
 
-        m_droid.AddComponent<Droid>();
-        Droid _droid = m_droid.GetComponent<Droid>();
+        m_friendlyDroid.AddComponent<Droid>();
+        Droid _droid = m_friendlyDroid.GetComponent<Droid>();
         _droid.AddChargeModule(ScriptableObject.CreateInstance<ChargeModule>());
         ChargeModule _newModule = ScriptableObject.CreateInstance<ChargeModule>();
         _newModule.SetName("Module 2");
@@ -25,6 +25,8 @@ public class Master : MonoBehaviour
         _droid.AddPowerModule(ScriptableObject.CreateInstance<PowerModule>());
 
         m_battleUI.AddDroidUI(_droid);
+
+        m_enemyDroid.AddComponent<Droid>();
     }
 
     private void Update()
