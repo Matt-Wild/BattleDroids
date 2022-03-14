@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputController : MonoBehaviour
 {
     [SerializeField]
-    Material m_droidDefault, m_droidGlow;
+    Material m_droidDefault, m_droidGlow, m_enemyGlow;
 
     Droid m_targetDroid;
 
@@ -33,16 +33,26 @@ public class InputController : MonoBehaviour
             if (m_targetDroid == _newTarget.GetComponent<Droid>())
             {
                 m_targetDroid.GetComponent<MeshRenderer>().material = m_droidDefault;
+                m_targetDroid.GetModuleSelector().Disable();
 
                 m_targetDroid = null;
                 return;
             }
 
             m_targetDroid.GetComponent<MeshRenderer>().material = m_droidDefault;
+            m_targetDroid.GetModuleSelector().Disable();
         }
 
         m_targetDroid = _newTarget.GetComponent<Droid>();
+        m_targetDroid.GetModuleSelector().Enable();
 
-        m_targetDroid.GetComponent<MeshRenderer>().material = m_droidGlow;
+        if (m_targetDroid.GetGameObject().layer == 25)
+        {
+            m_targetDroid.GetComponent<MeshRenderer>().material = m_droidGlow;
+        }
+        else
+        {
+            m_targetDroid.GetComponent<MeshRenderer>().material = m_enemyGlow;
+        }
     }
 }
