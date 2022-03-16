@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Module : Destructible
 {
+    protected Droid m_host;
+    protected Texture m_icon;
+
     [SerializeField]
     protected string m_name = "Module";
 
-    protected Droid m_host;
+    void OnEnable()
+    {
+        m_icon = Resources.Load<Texture2D>("Textures/Modules/default");
+    }
 
     public string GetName()
     {
@@ -18,6 +24,11 @@ public class Module : Destructible
     {
         return m_host;
     }
+    
+    public Texture GetIcon()
+    {
+        return m_icon;
+    }
 
     public void SetName(string _name)
     {
@@ -27,5 +38,10 @@ public class Module : Destructible
     public void SetHost(Droid _droid)
     {
         m_host = _droid;
+    }
+
+    public void SetIcon(Texture _texture)
+    {
+        m_icon = _texture;
     }
 }

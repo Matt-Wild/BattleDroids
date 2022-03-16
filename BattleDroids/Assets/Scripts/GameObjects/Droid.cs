@@ -5,6 +5,7 @@ using UnityEngine;
 public class Droid : MonoBehaviour
 {
     protected GameObject m_gameObject;
+    protected ModuleSelector m_moduleSelector;
 
     protected string m_name = "Droid";
 
@@ -17,6 +18,9 @@ public class Droid : MonoBehaviour
     void Start()
     {
         m_gameObject = gameObject;
+
+        m_moduleSelector = Instantiate(GameObject.Find("PrefabManager").GetComponent<PrefabManager>().m_droidOverlay).GetComponent<ModuleSelector>();
+        m_moduleSelector.SetHost(this);
     }
 
     void Update()
@@ -75,6 +79,11 @@ public class Droid : MonoBehaviour
         return m_gameObject;
     }
 
+    public ModuleSelector GetModuleSelector()
+    {
+        return m_moduleSelector;
+    }
+
     public string GetName()
     {
         return m_name;
@@ -120,6 +129,11 @@ public class Droid : MonoBehaviour
     public void SetGameObject(GameObject _gameObject)
     {
         m_gameObject = _gameObject;
+    }
+
+    public void SetModuleSelector(ModuleSelector _moduleSelector)
+    {
+        m_moduleSelector = _moduleSelector;
     }
 
     public void SetName(string _name)
