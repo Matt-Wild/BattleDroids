@@ -6023,6 +6023,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_droidOverlay: {fileID: 4737508361697932025, guid: e7cb3910b72522148a4f3d725636d2fb,
     type: 3}
+  m_moduleElement: {fileID: 4426545146271987058, guid: a7e80a5cf48257f4186050a021926507,
+    type: 3}
 --- !u!4 &789121971
 Transform:
   m_ObjectHideFlags: 0

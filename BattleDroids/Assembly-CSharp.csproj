@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\GameObjects\ChargeModule.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Droid.cs" />
     <Compile Include="Assets\Scripts\BattleUI\BattleUI.cs" />
+    <Compile Include="Assets\Scripts\BattleUI\ModuleSelector.cs" />
     <Compile Include="Assets\Scripts\Master\PrefabManager.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Module.cs" />
     <Compile Include="Assets\Scripts\GameObjects\PowerModule.cs" />
@@ -65,7 +66,7 @@
     <Compile Include="Assets\Scripts\GameObjects\Destructible.cs" />
     <Compile Include="Assets\Scripts\BattleUI\DroidUI.cs" />
     <Compile Include="Assets\Scripts\Environment\LightFlicker.cs" />
-    <Compile Include="Assets\Scripts\BattleUI\ModuleSelector.cs" />
+    <Compile Include="Assets\Scripts\BattleUI\OverlayModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
