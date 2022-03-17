@@ -5,13 +5,23 @@ using UnityEngine;
 public class ChargeModule : Module
 {
     [SerializeField]
-    protected float m_capacity = 100.0f, m_charge = 0.0f;
+    protected float m_capacity = 10.0f, m_charge = 0.0f;
+
+    protected virtual void OnEnable()
+    {
+        m_icon = Resources.Load<Texture2D>("Textures/Modules/chargeModule");
+    }
 
     public void Update()
     {
         float _powerGeneration = m_host.GetPowerOuput();
 
         AddCharge(_powerGeneration * Time.deltaTime);
+    }
+
+    public virtual void Activate()
+    {
+        m_charge = 0.0f;
     }
 
     public float AddCharge(float _amount)
@@ -24,6 +34,15 @@ public class ChargeModule : Module
         }
 
         return m_charge;
+    }
+
+    public bool GetCharged()
+    {
+        if (m_charge == m_capacity)
+        {
+            return true;
+        }
+        return false;
     }
 
     public float GetChargePercent()

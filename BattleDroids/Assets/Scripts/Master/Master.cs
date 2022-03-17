@@ -15,13 +15,8 @@ public class Master : MonoBehaviour
 
         m_friendlyDroid1.AddComponent<Droid>();
         Droid _droid = m_friendlyDroid1.GetComponent<Droid>();
-        _droid.AddChargeModule(ScriptableObject.CreateInstance<ChargeModule>());
-        ChargeModule _newModule = ScriptableObject.CreateInstance<ChargeModule>();
-        _newModule.SetName("Module 2");
-        _droid.AddChargeModule(_newModule);
+        _droid.AddChargeModule(ScriptableObject.CreateInstance<CuntPunt>());
 
-        _droid.AddPowerModule(ScriptableObject.CreateInstance<PowerModule>());
-        _droid.AddPowerModule(ScriptableObject.CreateInstance<PowerModule>());
         _droid.AddPowerModule(ScriptableObject.CreateInstance<PowerModule>());
 
         m_battleUI.AddDroidUI(_droid);

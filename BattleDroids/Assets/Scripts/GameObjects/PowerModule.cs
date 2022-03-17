@@ -5,15 +5,20 @@ using UnityEngine;
 public class PowerModule : Module
 {
     [SerializeField]
-    protected float m_powerOutput = 1.0f;
+    protected float m_basePowerOutput = 1.0f;
+
+    void OnEnable()
+    {
+        m_icon = Resources.Load<Texture2D>("Textures/Modules/powerModule");
+    }
 
     public float GetPowerOutput()
     {
-        return m_powerOutput;
+        return m_basePowerOutput * GetIntegrityPercent();
     }
 
-    public void SetPowerOutput(float _output)
+    public void SetBasePowerOutput(float _output)
     {
-        m_powerOutput = _output;
+        m_basePowerOutput = _output;
     }
 }

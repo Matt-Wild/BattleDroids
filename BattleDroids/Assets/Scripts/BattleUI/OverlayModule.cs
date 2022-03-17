@@ -5,8 +5,18 @@ using UnityEngine.UI;
 
 public class OverlayModule : MonoBehaviour
 {
-
+    InputController m_inputController;
     Module m_module;
+
+    void Start()
+    {
+        m_inputController = GameObject.Find("InputController").GetComponent<InputController>();
+    }
+
+    public void UseTargetModule()
+    {
+        m_inputController.SetTargetModule(m_module);
+    }
 
     public Module GetModule()
     {

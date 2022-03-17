@@ -63,10 +63,11 @@
     <Compile Include="Assets\Scripts\GameObjects\Module.cs" />
     <Compile Include="Assets\Scripts\GameObjects\PowerModule.cs" />
     <Compile Include="Assets\Scripts\BattleUI\ChargeModuleUI.cs" />
+    <Compile Include="Assets\Scripts\BattleUI\OverlayModule.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Destructible.cs" />
     <Compile Include="Assets\Scripts\BattleUI\DroidUI.cs" />
     <Compile Include="Assets\Scripts\Environment\LightFlicker.cs" />
-    <Compile Include="Assets\Scripts\BattleUI\OverlayModule.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\CuntPunt.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

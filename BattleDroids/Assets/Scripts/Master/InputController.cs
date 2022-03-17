@@ -8,6 +8,7 @@ public class InputController : MonoBehaviour
     Material m_droidDefault, m_droidGlow, m_enemyGlow;
 
     Droid m_targetDroid;
+    Module m_targetModule;
 
     void Update()
     {
@@ -54,5 +55,15 @@ public class InputController : MonoBehaviour
         {
             m_targetDroid.GetComponent<MeshRenderer>().material = m_enemyGlow;
         }
+    }
+
+    public Module GetTargetModule()
+    {
+        return m_targetModule;
+    }
+
+    public void SetTargetModule(Module _module)
+    {
+        m_targetModule = _module;
     }
 }

@@ -13,10 +13,32 @@ public class ChargeModuleUI : MonoBehaviour
     [SerializeField]
     Text m_moduleText;
 
+    [SerializeField]
+    Button m_activationButton;
+
+    void Start()
+    {
+        m_activationButton.interactable = false;
+    }
+
     void Update()
     {
         m_chargeSlider.value = m_module.GetChargePercent();
         m_moduleText.text = m_module.GetName();
+
+        if (m_module.GetCharged())
+        {
+            m_activationButton.interactable = true;
+        }
+        else
+        {
+            m_activationButton.interactable = false;
+        }
+    }
+
+    public void ActivateModule()
+    {
+        m_module.Activate();
     }
 
     public ChargeModule GetModule()
