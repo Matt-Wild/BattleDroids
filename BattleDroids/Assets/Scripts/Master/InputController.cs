@@ -55,6 +55,17 @@ public class InputController : MonoBehaviour
         {
             m_targetDroid.GetComponent<MeshRenderer>().material = m_enemyGlow;
         }
+
+        ClearTargetModule();
+    }
+
+    public void ClearTargetModule()
+    {
+        if (m_targetModule)
+        {
+            m_targetModule.SetTargeted(false);
+            m_targetModule = null;
+        }
     }
 
     public Droid GetTargetDroid()
@@ -74,11 +85,8 @@ public class InputController : MonoBehaviour
 
     public void SetTargetModule(Module _module)
     {
-        if (m_targetModule)
-        {
-            m_targetModule.SetTargeted(false);
-        }
-        
+        ClearTargetModule();
+
         m_targetModule = _module;
         m_targetModule.SetTargeted(true);
     }

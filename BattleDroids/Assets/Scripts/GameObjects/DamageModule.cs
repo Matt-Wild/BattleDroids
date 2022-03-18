@@ -17,17 +17,19 @@ public class DamageModule : ChargeModule
     {
         base.Activate();
 
+        float _damage = m_damage * GetIntegrityPercent();
+
         InputController _inputController = GameObject.Find("InputController").GetComponent<InputController>();
         Module _targetModule = _inputController.GetTargetModule();
         Droid _targetDroid = _inputController.GetTargetDroid();
 
         if (_targetModule)
         {
-            _targetModule.Damage(m_damage);
+            _targetModule.Damage(_damage);
         }
         else if (_targetDroid)
         {
-            _targetDroid.Damage(m_damage);
+            _targetDroid.Damage(_damage);
         }
     }
 }

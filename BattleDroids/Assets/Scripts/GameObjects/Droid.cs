@@ -47,9 +47,9 @@ public class Droid : MonoBehaviour
     {
         m_integrity -= _amount;
 
-        if (m_integrity < 0)
+        if (m_integrity < 0.0f)
         {
-            m_integrity = 0;
+            m_integrity = 0.0f;
         }
 
         return m_integrity;

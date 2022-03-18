@@ -1,20 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ModuleSelector : MonoBehaviour
 {
     List<OverlayModule> m_moduleElements = new List<OverlayModule>();
 
     GameObject m_canvas;
-    GameObject m_modulesBackground;
     Droid m_host;
+    Image m_foregroundImage;
+
+    [SerializeField]
+    GameObject m_modulesBackground, m_modulesForeground;
 
     void Awake()
     {
         m_canvas = gameObject;
-        m_modulesBackground = m_canvas.transform.Find("ModulesBackground").gameObject;
+        m_foregroundImage = m_modulesForeground.GetComponent<Image>();
         Disable();
+    }
+
+    void Update()
+    {
+        if (m_host.GetIntegrity() == 0.0f)
+        {
+            m_foregroundImage.enabled = false;
+        }
+        else
+        {
+            m_foregroundImage.enabled = true;
+        }
     }
 
     void UpdateUI()
@@ -56,6 +72,7 @@ public class ModuleSelector : MonoBehaviour
         }
 
         m_modulesBackground.GetComponent<RectTransform>().sizeDelta = _backgroundSize;
+        m_modulesForeground.GetComponent<RectTransform>().sizeDelta = _backgroundSize;
     }
 
     void ClearModules()

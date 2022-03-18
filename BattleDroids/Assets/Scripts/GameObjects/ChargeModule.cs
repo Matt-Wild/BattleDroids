@@ -16,7 +16,7 @@ public class ChargeModule : Module
     {
         float _powerGeneration = m_host.GetPowerOuput();
 
-        AddCharge(_powerGeneration * Time.deltaTime);
+        AddCharge(_powerGeneration * Time.deltaTime * GetIntegrityPercent());
     }
 
     public virtual void Activate()
