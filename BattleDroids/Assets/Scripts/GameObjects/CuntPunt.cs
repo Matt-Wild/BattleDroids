@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CuntPunt : ChargeModule
+public class CuntPunt : DamageModule
 {
-    protected float m_damage = 100.0f;
-
     protected override void OnEnable()
     {
         base.OnEnable();
@@ -16,8 +14,5 @@ public class CuntPunt : ChargeModule
     public override void Activate()
     {
         base.Activate();
-
-        Module _target = GameObject.Find("InputController").GetComponent<InputController>().GetTargetModule();
-        _target.Damage(m_damage);
     }
 }

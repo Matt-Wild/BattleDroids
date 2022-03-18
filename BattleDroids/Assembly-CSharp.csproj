@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\BattleUI\DroidUI.cs" />
     <Compile Include="Assets\Scripts\Environment\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\GameObjects\CuntPunt.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\DamageModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

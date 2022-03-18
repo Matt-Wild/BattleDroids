@@ -13,7 +13,7 @@ public class Droid : MonoBehaviour
     protected List<ChargeModule> m_chargeModules = new List<ChargeModule>();
 
     [SerializeField]
-    protected int m_durability = 100, m_integrity = 100;
+    protected float m_durability = 100.0f, m_integrity = 100.0f;
 
     void Start()
     {
@@ -43,7 +43,7 @@ public class Droid : MonoBehaviour
         m_chargeModules.Add(_chargeModule);
     }
 
-    public int Damage(int _amount)
+    public float Damage(float _amount)
     {
         m_integrity -= _amount;
 
@@ -55,7 +55,7 @@ public class Droid : MonoBehaviour
         return m_integrity;
     }
 
-    public int Repair(int _amount)
+    public float Repair(float _amount)
     {
         m_integrity += _amount;
 
@@ -67,7 +67,7 @@ public class Droid : MonoBehaviour
         return m_integrity;
     }
 
-    public int RepairFull()
+    public float RepairFull()
     {
         m_integrity = m_durability;
 
@@ -113,15 +113,15 @@ public class Droid : MonoBehaviour
 
     public float GetIntegrityPercent()
     {
-        return (float)m_integrity / (float)m_durability;
+        return m_integrity / m_durability;
     }
 
-    public int GetDurability()
+    public float GetDurability()
     {
         return m_durability;
     }
 
-    public int GetIntegrity()
+    public float GetIntegrity()
     {
         return m_integrity;
     }
@@ -151,12 +151,12 @@ public class Droid : MonoBehaviour
         m_chargeModules = _chargeModules;
     }
 
-    public void SetDurability(int _durability)
+    public void SetDurability(float _durability)
     {
         m_durability = _durability;
     }
 
-    public void SetIntegrity(int _integrity)
+    public void SetIntegrity(float _integrity)
     {
         m_integrity = _integrity;
     }

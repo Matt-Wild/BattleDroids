@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ChargeModuleUI : MonoBehaviour
 {
     ChargeModule m_module;
+    InputController m_inputController;
 
     [SerializeField]
     Slider m_chargeSlider;
@@ -18,6 +19,7 @@ public class ChargeModuleUI : MonoBehaviour
 
     void Start()
     {
+        m_inputController = GameObject.Find("InputController").GetComponent<InputController>();
         m_activationButton.interactable = false;
     }
 
@@ -26,7 +28,7 @@ public class ChargeModuleUI : MonoBehaviour
         m_chargeSlider.value = m_module.GetChargePercent();
         m_moduleText.text = m_module.GetName();
 
-        if (m_module.GetCharged())
+        if (m_module.GetCharged() && (m_inputController.GetTargetModule() || m_inputController.GetTargetDroid()))
         {
             m_activationButton.interactable = true;
         }

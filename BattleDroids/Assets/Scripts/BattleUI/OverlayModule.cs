@@ -8,9 +8,24 @@ public class OverlayModule : MonoBehaviour
     InputController m_inputController;
     Module m_module;
 
+    [SerializeField]
+    Image m_targetOverlay;
+
     void Start()
     {
         m_inputController = GameObject.Find("InputController").GetComponent<InputController>();
+    }
+
+    void Update()
+    {
+        if (m_module.GetTargeted())
+        {
+            m_targetOverlay.enabled = true;
+        }
+        else
+        {
+            m_targetOverlay.enabled = false;
+        }
     }
 
     public void UseTargetModule()

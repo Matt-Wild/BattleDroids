@@ -57,13 +57,29 @@ public class InputController : MonoBehaviour
         }
     }
 
+    public Droid GetTargetDroid()
+    {
+        return m_targetDroid;
+    }
+
     public Module GetTargetModule()
     {
         return m_targetModule;
     }
 
+    public void SetTargetDroid(Droid _droid)
+    {
+        m_targetDroid = _droid;
+    }
+
     public void SetTargetModule(Module _module)
     {
+        if (m_targetModule)
+        {
+            m_targetModule.SetTargeted(false);
+        }
+        
         m_targetModule = _module;
+        m_targetModule.SetTargeted(true);
     }
 }

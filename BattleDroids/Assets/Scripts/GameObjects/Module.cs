@@ -6,6 +6,7 @@ public class Module : Destructible
 {
     protected Droid m_host;
     protected Texture m_icon;
+    protected bool m_targeted = false;
 
     [SerializeField]
     protected string m_name = "Module";
@@ -30,6 +31,11 @@ public class Module : Destructible
         return m_icon;
     }
 
+    public bool GetTargeted()
+    {
+        return m_targeted;
+    }
+
     public void SetName(string _name)
     {
         m_name = _name;
@@ -43,5 +49,10 @@ public class Module : Destructible
     public void SetIcon(Texture _texture)
     {
         m_icon = _texture;
+    }
+
+    public void SetTargeted(bool _targeted)
+    {
+        m_targeted = _targeted;
     }
 }
