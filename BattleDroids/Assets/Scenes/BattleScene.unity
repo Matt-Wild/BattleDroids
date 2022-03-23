@@ -6474,6 +6474,7 @@ MonoBehaviour:
   m_enemyDroid1: {fileID: 496248890}
   m_enemyDroid2: {fileID: 1808865358}
   m_enemyDroid3: {fileID: 1803901513}
+  m_withdrawPosition: {x: 0, y: 0, z: -1000}
 --- !u!4 &1288119580
 Transform:
   m_ObjectHideFlags: 0

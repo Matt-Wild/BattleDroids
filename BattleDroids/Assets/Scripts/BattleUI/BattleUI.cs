@@ -15,6 +15,19 @@ public class BattleUI : MonoBehaviour
         m_battleCanvas = gameObject;
     }
 
+    void Update()
+    {
+        foreach (DroidUI _droidUI in m_droidUIs)
+        {
+            if (_droidUI.GetDroid().GetWithdrawn())
+            {
+                m_droidUIs.Remove(_droidUI);
+                Destroy(_droidUI.gameObject);
+                break;
+            }
+        }
+    }
+
     public void AddDroidUI(Droid _droid)
     {
         GameObject _newDroidUI = Instantiate(m_droidUIPrefab);

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Droid : MonoBehaviour
 {
+    protected bool m_withdrawn = false;
+
     protected GameObject m_gameObject;
     protected ModuleSelector m_moduleSelector;
 
@@ -21,6 +23,7 @@ public class Droid : MonoBehaviour
 
         m_moduleSelector = Instantiate(GameObject.Find("PrefabManager").GetComponent<PrefabManager>().m_droidOverlay).GetComponent<ModuleSelector>();
         m_moduleSelector.SetHost(this);
+        m_moduleSelector.gameObject.transform.SetParent(gameObject.transform);
     }
 
     void Update()
@@ -29,6 +32,11 @@ public class Droid : MonoBehaviour
         {
             _chargeModule.Update();
         }
+    }
+
+    public void Teleport(Vector3 _pos)
+    {
+        m_gameObject.transform.position = _pos;
     }
 
     public void AddPowerModule(PowerModule _powerModule)
@@ -72,6 +80,11 @@ public class Droid : MonoBehaviour
         m_integrity = m_durability;
 
         return m_integrity;
+    }
+
+    public bool GetWithdrawn()
+    {
+        return m_withdrawn;
     }
 
     public GameObject GetGameObject()
@@ -124,6 +137,11 @@ public class Droid : MonoBehaviour
     public float GetIntegrity()
     {
         return m_integrity;
+    }
+
+    public void SetWithdrawn(bool _withdrawn)
+    {
+        m_withdrawn = _withdrawn;
     }
 
     public void SetGameObject(GameObject _gameObject)

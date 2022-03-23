@@ -9,15 +9,21 @@ public class OverlayModule : MonoBehaviour
     Module m_module;
 
     [SerializeField]
-    Image m_targetOverlay;
+    Image m_targetOverlay, m_destroyedOverlay;
 
     void Start()
     {
         m_inputController = GameObject.Find("InputController").GetComponent<InputController>();
+        m_destroyedOverlay.enabled = false;
     }
 
     void Update()
     {
+        if (m_module.GetIntegrity() == 0.0f)
+        {
+            m_destroyedOverlay.enabled = true;
+        }
+
         if (m_module.GetTargeted())
         {
             m_targetOverlay.enabled = true;
