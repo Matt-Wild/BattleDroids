@@ -167,6 +167,7 @@ public class Droid : MonoBehaviour
         if (m_withdrawn)
         {
             Detarget();
+            Teleport(GameObject.Find("Master").GetComponent<Master>().GetWithdrawPosition());
         }
     }
 

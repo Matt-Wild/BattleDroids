@@ -55,8 +55,12 @@ public class Master : MonoBehaviour
             if (_droid.GetIntegrity() == 0.0f)
             {
                 _droid.SetWithdrawn(true);
-                _droid.Teleport(m_withdrawPosition);
             }
         }
+    }
+
+    public Vector3 GetWithdrawPosition()
+    {
+        return m_withdrawPosition;
     }
 }

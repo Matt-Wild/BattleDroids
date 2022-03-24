@@ -29,6 +29,11 @@ public class DroidUI : MonoBehaviour
         m_nametagText.text = m_droid.GetName();
     }
 
+    public void WithdrawDroid()
+    {
+        m_droid.SetWithdrawn(true);
+    }
+
     public void UpdateChargeModuleUI()
     {
         foreach(ChargeModule _module in m_droid.GetChargeModules())
