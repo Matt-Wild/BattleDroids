@@ -23,8 +23,23 @@ public class BattleUI : MonoBehaviour
             {
                 m_droidUIs.Remove(_droidUI);
                 Destroy(_droidUI.gameObject);
+                UpdateUIPosition();
                 break;
             }
+        }
+    }
+
+    public void UpdateUIPosition()
+    {
+        float _xAdj = 0.0f;
+
+        foreach (DroidUI _droidUI in m_droidUIs)
+        {
+            Vector3 _newPosition = _droidUI.gameObject.transform.localPosition;
+            _newPosition.x = _xAdj + (Screen.width / 2) - 60;
+            _droidUI.gameObject.transform.localPosition = _newPosition;
+
+            _xAdj -= 110.0f;
         }
     }
 
@@ -34,13 +49,11 @@ public class BattleUI : MonoBehaviour
         _newDroidUI.transform.SetParent(m_battleCanvas.transform, false);
         _newDroidUI.transform.localScale = new Vector3(1, 1, 1);
 
-        Vector3 _newPosition = _newDroidUI.transform.localPosition;
-        _newPosition.x = -110 * m_droidUIs.Count + (Screen.width / 2) - 60;
-        _newDroidUI.transform.localPosition = _newPosition;
-
         DroidUI _newDroidUIScript = _newDroidUI.GetComponent<DroidUI>();
         _newDroidUIScript.SetDroid(_droid);
 
         m_droidUIs.Add(_newDroidUIScript);
+
+        UpdateUIPosition();
     }
 }

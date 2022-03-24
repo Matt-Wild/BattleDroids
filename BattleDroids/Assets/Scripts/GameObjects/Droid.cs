@@ -5,6 +5,7 @@ using UnityEngine;
 public class Droid : MonoBehaviour
 {
     protected bool m_withdrawn = false;
+    protected bool m_targeted = false;
 
     protected GameObject m_gameObject;
     protected ModuleSelector m_moduleSelector;
@@ -31,6 +32,21 @@ public class Droid : MonoBehaviour
         foreach(ChargeModule _chargeModule in m_chargeModules)
         {
             _chargeModule.Update();
+        }
+    }
+
+    public void Detarget()
+    {
+        m_targeted = false;
+
+        foreach (PowerModule _module in m_powerModules)
+        {
+            _module.SetTargeted(false);
+        }
+
+        foreach (ChargeModule _module in m_chargeModules)
+        {
+            _module.SetTargeted(false);
         }
     }
 
@@ -85,6 +101,11 @@ public class Droid : MonoBehaviour
     public bool GetWithdrawn()
     {
         return m_withdrawn;
+    }
+
+    public bool GetTargeted()
+    {
+        return m_targeted;
     }
 
     public GameObject GetGameObject()
@@ -142,6 +163,16 @@ public class Droid : MonoBehaviour
     public void SetWithdrawn(bool _withdrawn)
     {
         m_withdrawn = _withdrawn;
+
+        if (m_withdrawn)
+        {
+            Detarget();
+        }
+    }
+
+    public void SetTargeted(bool _targeted)
+    {
+        m_targeted = _targeted;
     }
 
     public void SetGameObject(GameObject _gameObject)

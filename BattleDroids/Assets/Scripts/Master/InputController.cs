@@ -25,6 +25,24 @@ public class InputController : MonoBehaviour
                 }    
             }
         }
+
+        if (m_targetDroid)
+        {
+            if (!m_targetDroid.GetTargeted())
+            {
+                m_targetDroid.Detarget();
+                m_targetDroid = null;
+            }
+        }
+
+        if (m_targetModule)
+        {
+            if (!m_targetModule.GetTargeted())
+            {
+                m_targetModule.SetTargeted(false);
+                m_targetModule = null;
+            }
+        }
     }
 
     void UpdateTargetDroid(GameObject _newTarget)
@@ -35,6 +53,7 @@ public class InputController : MonoBehaviour
             {
                 m_targetDroid.GetComponent<MeshRenderer>().material = m_droidDefault;
                 m_targetDroid.GetModuleSelector().Disable();
+                m_targetDroid.Detarget();
 
                 m_targetDroid = null;
                 return;
@@ -42,10 +61,12 @@ public class InputController : MonoBehaviour
 
             m_targetDroid.GetComponent<MeshRenderer>().material = m_droidDefault;
             m_targetDroid.GetModuleSelector().Disable();
+            m_targetDroid.Detarget();
         }
 
         m_targetDroid = _newTarget.GetComponent<Droid>();
         m_targetDroid.GetModuleSelector().Enable();
+        m_targetDroid.SetTargeted(true);
 
         if (m_targetDroid.GetGameObject().layer == 25)
         {
