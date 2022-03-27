@@ -33,6 +33,14 @@ public class Droid : MonoBehaviour
         {
             _chargeModule.Update();
         }
+
+        if (!m_withdrawn)
+        {
+            if (GetPowerIntegrity() == 0.0f)
+            {
+                SetWithdrawn(true);
+            }
+        }
     }
 
     public void Detarget()
@@ -96,6 +104,18 @@ public class Droid : MonoBehaviour
         m_integrity = m_durability;
 
         return m_integrity;
+    }
+
+    public float GetPowerIntegrity()
+    {
+        float _total = 0.0f;
+
+        foreach (PowerModule _module in m_powerModules)
+        {
+            _total += _module.GetIntegrity();
+        }
+
+        return _total;
     }
 
     public bool GetWithdrawn()
