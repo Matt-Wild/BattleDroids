@@ -6025,6 +6025,8 @@ MonoBehaviour:
     type: 3}
   m_moduleElement: {fileID: 4426545146271987058, guid: a7e80a5cf48257f4186050a021926507,
     type: 3}
+  m_damagePopup: {fileID: 4427303782145602477, guid: 7b88d3900f36eaa419f70fcaf6534f47,
+    type: 3}
 --- !u!4 &789121971
 Transform:
   m_ObjectHideFlags: 0

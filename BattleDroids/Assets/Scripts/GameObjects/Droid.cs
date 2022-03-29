@@ -9,6 +9,7 @@ public class Droid : MonoBehaviour
 
     protected GameObject m_gameObject;
     protected ModuleSelector m_moduleSelector;
+    protected PrefabManager m_prefabManager;
 
     protected string m_name = "Droid";
 
@@ -21,8 +22,9 @@ public class Droid : MonoBehaviour
     void Start()
     {
         m_gameObject = gameObject;
+        m_prefabManager = GameObject.Find("PrefabManager").GetComponent<PrefabManager>();
 
-        m_moduleSelector = Instantiate(GameObject.Find("PrefabManager").GetComponent<PrefabManager>().m_droidOverlay).GetComponent<ModuleSelector>();
+        m_moduleSelector = Instantiate(m_prefabManager.m_droidOverlay).GetComponent<ModuleSelector>();
         m_moduleSelector.SetHost(this);
         m_moduleSelector.gameObject.transform.SetParent(gameObject.transform);
     }
@@ -75,8 +77,16 @@ public class Droid : MonoBehaviour
         m_chargeModules.Add(_chargeModule);
     }
 
+    public void SpawnPopup(float _value)
+    {
+        GameObject _popup = Instantiate(m_prefabManager.m_damagePopup);
+        _popup.GetComponent<DamagePopup>().SetValue(_value);
+    }
+
     public float Damage(float _amount)
     {
+        SpawnPopup(_amount);
+
         m_integrity -= _amount;
 
         if (m_integrity < 0.0f)
