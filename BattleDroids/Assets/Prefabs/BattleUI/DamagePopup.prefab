@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4427303782145602472}
   - component: {fileID: 4427303782145602479}
   - component: {fileID: 4427303782145602478}
+  - component: {fileID: 2476710234633053038}
+  - component: {fileID: 1285688468233271367}
   m_Layer: 3
   m_Name: DamagePopup
   m_TagString: Untagged
@@ -116,6 +118,30 @@ MonoBehaviour:
   m_value: {fileID: 4427303783166033802}
   m_speed: 2.25
   m_duration: 2
+--- !u!114 &2476710234633053038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4427303782145602477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14ba580bd1cf92246beb06451ac9f37c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!225 &1285688468233271367
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4427303782145602477}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &4427303783166033802
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,8 +234,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

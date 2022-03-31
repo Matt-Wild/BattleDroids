@@ -7,7 +7,7 @@ public class Destructible : ScriptableObject
     [SerializeField]
     protected float m_durability = 100.0f, m_integrity = 100.0f;
 
-    public float Damage(float _amount)
+    public virtual float Damage(float _amount)
     {
         m_integrity -= _amount;
 

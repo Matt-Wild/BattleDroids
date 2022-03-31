@@ -16,6 +16,14 @@ public class Module : Destructible
         m_icon = Resources.Load<Texture2D>("Textures/Modules/default");
     }
 
+    public override float Damage(float _amount)
+    {
+        base.Damage(_amount);
+        m_host.SpawnPopup(_amount);
+
+        return _amount;
+    }
+
     public string GetName()
     {
         return m_name;

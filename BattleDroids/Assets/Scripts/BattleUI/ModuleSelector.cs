@@ -69,6 +69,7 @@ public class ModuleSelector : MonoBehaviour
         {
             _moduleElement.transform.localPosition = _newPosition;
             _newPosition.x += 90.0f;
+            _moduleElement.transform.localRotation = Quaternion.identity;
         }
 
         m_modulesBackground.GetComponent<RectTransform>().sizeDelta = _backgroundSize;

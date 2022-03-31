@@ -81,6 +81,8 @@ public class Droid : MonoBehaviour
     {
         GameObject _popup = Instantiate(m_prefabManager.m_damagePopup);
         _popup.GetComponent<DamagePopup>().SetValue(_value);
+        Vector3 _popupPos = gameObject.transform.position;
+        _popup.transform.position = _popupPos;
     }
 
     public float Damage(float _amount)
