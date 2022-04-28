@@ -6,6 +6,7 @@ public class Droid : MonoBehaviour
 {
     protected bool m_withdrawn = false;
     protected bool m_targeted = false;
+    protected bool m_enemy = false;
 
     protected GameObject m_gameObject;
     protected ModuleSelector m_moduleSelector;
@@ -140,6 +141,11 @@ public class Droid : MonoBehaviour
         return m_targeted;
     }
 
+    public bool GetEnemy()
+    {
+        return m_enemy;
+    }
+
     public GameObject GetGameObject()
     {
         return m_gameObject;
@@ -206,6 +212,11 @@ public class Droid : MonoBehaviour
     public void SetTargeted(bool _targeted)
     {
         m_targeted = _targeted;
+    }
+
+    public void SetEnemy(bool _enemy)
+    {
+        m_enemy = _enemy;
     }
 
     public void SetGameObject(GameObject _gameObject)

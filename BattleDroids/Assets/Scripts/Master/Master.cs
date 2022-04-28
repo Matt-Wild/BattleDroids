@@ -37,6 +37,9 @@ public class Master : MonoBehaviour
         m_enemyDroid1.AddComponent<Droid>();
         m_enemyDroid2.AddComponent<Droid>();
         m_enemyDroid3.AddComponent<Droid>();
+        m_enemyDroid1.GetComponent<Droid>().SetEnemy(true);
+        m_enemyDroid2.GetComponent<Droid>().SetEnemy(true);
+        m_enemyDroid3.GetComponent<Droid>().SetEnemy(true);
 
         m_enemyDroid1.GetComponent<Droid>().AddPowerModule(ScriptableObject.CreateInstance<PowerModule>());
         m_enemyDroid1.GetComponent<Droid>().AddChargeModule(ScriptableObject.CreateInstance<CuntPunt>());

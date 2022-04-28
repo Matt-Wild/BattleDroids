@@ -51,7 +51,7 @@ public class InputController : MonoBehaviour
         {
             if (m_targetDroid == _newTarget.GetComponent<Droid>())
             {
-                m_targetDroid.GetComponent<MeshRenderer>().material = m_droidDefault;
+                m_targetDroid.transform.Find("Body").GetComponent<MeshRenderer>().material = m_droidDefault;
                 m_targetDroid.GetModuleSelector().Disable();
                 m_targetDroid.Detarget();
 
@@ -59,7 +59,7 @@ public class InputController : MonoBehaviour
                 return;
             }
 
-            m_targetDroid.GetComponent<MeshRenderer>().material = m_droidDefault;
+            m_targetDroid.transform.Find("Body").GetComponent<MeshRenderer>().material = m_droidDefault;
             m_targetDroid.GetModuleSelector().Disable();
             m_targetDroid.Detarget();
         }
@@ -68,13 +68,13 @@ public class InputController : MonoBehaviour
         m_targetDroid.GetModuleSelector().Enable();
         m_targetDroid.SetTargeted(true);
 
-        if (m_targetDroid.GetGameObject().layer == 25)
+        if (m_targetDroid.GetEnemy())
         {
-            m_targetDroid.GetComponent<MeshRenderer>().material = m_droidGlow;
+            m_targetDroid.transform.Find("Body").GetComponent<MeshRenderer>().material = m_enemyGlow;
         }
         else
         {
-            m_targetDroid.GetComponent<MeshRenderer>().material = m_enemyGlow;
+            m_targetDroid.transform.Find("Body").GetComponent<MeshRenderer>().material = m_droidGlow;
         }
 
         ClearTargetModule();
